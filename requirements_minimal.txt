@@ -1,0 +1,15 @@
+# Minimal requirements for DeepSeek-OCR with MPS (macOS)
+# Avoids problematic packages that require compilation
+
+torch==2.6.0
+torchvision
+transformers==4.46.3
+tokenizers==0.20.3
+accelerate
+einops
+addict
+easydict
+
+# Optional: for basic functionality
+tqdm
+colorama
