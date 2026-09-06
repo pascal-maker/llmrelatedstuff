@@ -1,0 +1,17 @@
+{
+  "name": "local-company-agent",
+  "version": "1.0.0",
+  "description": "Two-step local LLM agent: company extraction → lead scoring",
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+Timestamp,Model,Benchmark,Prompt Tokens,Prompt ms,Prompt t/s,Gen Tokens,Gen ms,Gen t/s
+2026-09-06T17:16:27.421Z,"ggml-org/Qwen3-0.6B-GGUF","Short Generation",16,1078.79,14.83,248,1244.43,199.29
+2026-09-06T17:16:30.744Z,"ggml-org/Qwen3-0.6B-GGUF","Code Generation",24,78.74,304.82,500,2700.07,185.18
+2026-09-06T17:16:32.617Z,"ggml-org/Qwen3-0.6B-GGUF","Context Extraction",126,58.87,2140.45,302,1459.45,206.93
+2026-09-06T17:20:37.399Z,"ggml-org/Qwen3-0.6B-GGUF","Short Generation",16,546.88,29.26,248,1189.76,208.44
+2026-09-06T17:20:39.823Z,"ggml-org/Qwen3-0.6B-GGUF","Code Generation",24,15.99,1500.56,500,2399.42,208.38
+2026-09-06T17:20:41.253Z,"ggml-org/Qwen3-0.6B-GGUF","Context Extraction",1,4.87,205.21,302,1407.22,214.61
