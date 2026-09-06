@@ -171,7 +171,7 @@ async function researchCompany(text: string): Promise<void> {
 
   const company = await extractCompany(text);
 
-  console.log("\n✅ VALIDATED COMPANY:");
+  console.log("\nValidated Company:");
   console.log(JSON.stringify(company, null, 2));
 
   console.log("\n" + "═".repeat(60));
@@ -180,7 +180,7 @@ async function researchCompany(text: string): Promise<void> {
 
   const lead = await scoreLead(company);
 
-  console.log("\n✅ LEAD RESULT:");
+  console.log("\nLead Result:");
   console.log(JSON.stringify({
     company: company.companyName,
     score: lead.score,

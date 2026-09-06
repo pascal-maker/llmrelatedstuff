@@ -32,5 +32,5 @@ export function saveResult(result: BenchmarkResult) {
     fs.appendFileSync(CSV_FILE, row, 'utf8');
   }
 
-  console.log(`\n💾 Saved result to ${CSV_FILE}`);
+  console.log(`\nSaved result to ${CSV_FILE}`);
 }

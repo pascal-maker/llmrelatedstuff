@@ -16,7 +16,7 @@ async function getActiveModel(): Promise<string> {
 }
 
 async function runBenchmark(model: string, benchmark: typeof benchmarks[0]) {// Function to run a benchmark
-  console.log(`\n▶️ Running benchmark: "${benchmark.name}"...`);// Logs the name of the benchmark being run
+  console.log(`\nRunning benchmark: "${benchmark.name}"...`);// Logs the name of the benchmark being run
   
   const res = await fetch(LLAMA_URL, {
     method: 'POST', // POST method
@@ -66,7 +66,7 @@ async function runBenchmark(model: string, benchmark: typeof benchmarks[0]) {// 
   }
 
   if (!timings) {
-    console.warn("⚠️ No telemetry timings found in stream. Make sure llama-server supports it.");
+    console.warn("Warning: No telemetry timings found in stream. Make sure llama-server supports it.");
     return;
   }
 
@@ -97,19 +97,19 @@ async function runBenchmark(model: string, benchmark: typeof benchmarks[0]) {// 
 }
 
 async function main() {
-  console.log('🔍 Detecting active llama.cpp model...'); // Logs that the active model is being detected
+  console.log('Detecting active llama.cpp model...'); // Logs that the active model is being detected
   const model = await getActiveModel(); // Gets the active model
-  console.log(`✅ Active model: ${model}`); // Logs the active model
+  console.log(`Active model: ${model}`); // Logs the active model
 
   for (const benchmark of benchmarks) { // Iterates over the benchmarks
     try {
       await runBenchmark(model, benchmark);
     } catch (err) { // Catches errors
-      console.error(`❌ Benchmark failed:`, err); // Logs the error
+      console.error(`Benchmark failed:`, err); // Logs the error
     }
   }
 
-  console.log(`\n🎉 All benchmarks completed!`); // Logs that all benchmarks have completed
+  console.log(`\nAll benchmarks completed!`); // Logs that all benchmarks have completed
 }
 
 main().catch(console.error); // Runs the main function and catches any errors

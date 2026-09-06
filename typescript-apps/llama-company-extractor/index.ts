@@ -93,7 +93,7 @@ async function extractCompany(
       return company; // return the valid company object
     } catch (err) { // catch block to handle failed attempts
       lastError = err; // store the last error
-      console.error(`\n⚠  Parse/validation failed on attempt ${attempt}:`);// log the error message
+      console.error(`\nWarning: Parse/validation failed on attempt ${attempt}:`);// log the error message
       console.error(err instanceof Error ? err.message : err); // log the error message
 
       if (attempt <= maxRetries) { // check if the number of attempts is less than the maximum number of retries
@@ -147,10 +147,10 @@ for (const { label, text } of testCases) {// iterate over the test cases
 
   try {
     const company = await extractCompany(text); // extract the company information from the text
-    console.log("\n✅ VALIDATED RESULT:"); // log the valid company object
+    console.log("\nValidated Result:"); // log the valid company object
     console.log(JSON.stringify(company, null, 2)); // log the valid company object
   } catch (err) { // catch block to handle failed attempts
-    console.error("\n❌ EXTRACTION FAILED:"); // log the error message
+    console.error("\nExtraction Failed:"); // log the error message
     console.error(err instanceof Error ? err.message : err); // log the error message
   }
 }

@@ -2,7 +2,7 @@
 
 A comprehensive playground and laboratory for experimenting with local AI inference, ranging from lightweight Apple Silicon Python scripts (MLX) to full-stack TypeScript applications built on top of `llama.cpp`.
 
-## 📁 Repository Structure
+## Repository Structure
 
 The repository is organized into distinct domains based on the tech stack and model modality:
 
@@ -26,7 +26,7 @@ Test data, reference images (e.g., 1950s teapot reference), and documents used b
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ### For TypeScript / Llama.cpp Apps
 These apps expect a `llama-server` to be running locally on port 8080.
@@ -56,12 +56,12 @@ These apps expect a `llama-server` to be running locally on port 8080.
 
 ---
 
-## 🛠️ System Requirements
+## System Requirements
 - **Hardware**: macOS with Apple Silicon (M1/M2/M3/M4) is highly recommended to take advantage of the Metal backend for both `llama.cpp` and `MLX`.
 - **Memory**: 16GB+ Unified Memory (32GB+ recommended for larger 7B-14B Vision models).
 - **Storage**: Ensure sufficient disk space; downloading GGUF and safetensors weights can quickly consume hundreds of gigabytes.
 
-## 📝 Notes
+## Notes
 - The first execution of any Python script will download model weights automatically from Hugging Face.
 - If a model requires custom code, ensure `trust_remote_code=True` is set in the script.
 - See model-specific licenses in their respective Hugging Face repositories.
